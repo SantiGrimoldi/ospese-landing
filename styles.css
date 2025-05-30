@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
@@ -14,27 +19,27 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    min-height: 100vh;
+    padding: 1.5rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 header {
     text-align: center;
-    margin-bottom: 2rem;
-    padding: 2rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .logo {
-    max-width: 400px;
+    max-width: 280px;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .message-container {
     background-color: #f8f9fa;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -44,48 +49,47 @@ header {
 
 h1 {
     color: #1a237e;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     font-weight: 500;
 }
 
 .divider {
-    width: 80px;
-    height: 3px;
+    width: 60px;
+    height: 2px;
     background-color: #1a237e;
-    margin: 1.2rem auto;
+    margin: 1rem auto;
     border-radius: 2px;
     opacity: 0.7;
 }
 
 .main-message {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #444;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     font-weight: 400;
 }
 
 .secondary-message {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #666;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .contact-message {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #1a237e;
     font-weight: 500;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
     border-top: 1px solid #e9ecef;
 }
 
 footer {
-    margin-top: auto;
+    margin-top: 1rem;
     text-align: center;
-    padding: 2rem 0;
     color: #666;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -94,23 +98,23 @@ footer {
     }
 
     .logo {
-        max-width: 280px;
+        max-width: 200px;
     }
 
     .message-container {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .main-message {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .secondary-message,
     .contact-message {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 } 
